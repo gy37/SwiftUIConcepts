@@ -21,4 +21,13 @@
 19. NavigationView导航页面，里面的NavigationLink指定要导航的详情页面，通常配合List使用，List外面的组件是详情页面默认显示的；
 20. The sample uses the secondary scene Settings to provide a Settings menu item that’s available in the app menu, which is a common feature of Mac apps. Settings scene 提供设置菜单，在Mac app中；
 21. A conditional compilation block tells the Swift compiler to conditionally compile the code block depending on the value of one or more compilation conditions. Swift支持条件编译；
-22. 
+22. A Text view displays read-only text, Text组件用来显示只读文本；
+23. Symbols, such as the iconography that SF Symbols provides, can denote common app features, like folders, heart shapes for favorites, or a camera icon to access the camera. 图标可以表明常用功能；Effective symbols streamline your app’s UI, and are easily recognizable by the people who use your app. 有效的图标可以连接你的app，也让用户更容易识别；You can customize their colors and sizes using standard view modifiers provided in SwiftUI. Even though you specify a system or custom symbol in an Image, treat SF Symbols more like text. 可以使用视图的修改器来设置图标颜色和大小，和Text类似； 
+24. To use both text and a symbol to represent a single element in your app, use a Label. 同时显示文字和图标，使用Label；
+25. Views that people interact with come in discrete sizes, to maintain consistency when several elements of the same type appear together, like in a Settings pane. Controls also need to be large enough for people to accurately click or tap. You can use view modifiers to choose among these sizes. 一组用户交互的Control组件，可以通过Control相关的属性来统一设置，保持一致；
+26. 通常使用enum Enums: String, CaseIterable, Identifiable {}定义枚举；
+27. Use this modifier to differentiate among certain selectable views, like the possible values of a Picker or the tabs of a TabView. Tag values can be of any type that conforms to the Hashable protocol. tag修改器用来区分一系列选择视图，遵守Hashable协议的值都可以作为tag使用；
+28. Display photos and other rich graphics in an Image. By default, an Image displays at the asset’s original size. You can add modifiers like resizable(capInsets:resizingMode:) and scaledToFit() or scaledToFill() to scale it to the available space. 使用Image显示图片，默认使用图片原始大小，可以使用修改器适配大小；
+29. If you’re accessing an image asset from a server, use an AsyncImage to handle the download while keeping your app responsive. 使用AsyncImage组件异步加载网络图片；
+30. Use a single shape or a composition of multiple shapes to create a background, border, or other visual element. You can define a shape’s size with a modifier like frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:), or allow it to fill all available space. 形状，可以通过修饰器修改；
+31. 

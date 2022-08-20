@@ -13,6 +13,7 @@ struct SettingsView: View {
         case sync = "Sync"
         case general = "General"
         case appIcon = "App icon"
+        case adaptable = "Adaptable"
         
         var id: String {
             self.rawValue
@@ -28,6 +29,8 @@ struct SettingsView: View {
                 return "gear"
             case .appIcon:
                 return "app"
+            case .adaptable:
+                return "circle"
             }
         }
     }
@@ -37,18 +40,32 @@ struct SettingsView: View {
         #if os(macOS)
             TabView {
                 ForEach(Settings.allCases) { setting in
-                    SettingsDetailView(title: setting.rawValue)
-                        .tabItem {
-                            Label(setting.rawValue, systemImage: setting.image)
-                        }
-                        .tag(setting)
+                    switch setting {
+                    case .account, .sync, .general, .appIcon:
+                        SettingsDetailView(title: setting.rawValue)
+                            .tabItem {
+                                Label(setting.rawValue, systemImage: setting.image)
+                            }
+                            .tag(setting)
+                    case .adaptable:
+                        AdaptableView()
+                            .tabItem {
+                                Label(setting.rawValue, systemImage: setting.image)
+                            }
+                            .tag(setting)
+                    } 
                 }
             }
             .frame(width: 375, height: 150)
         #else
             List(Settings.allCases) { setting in
                 NavigationLink {
-                    SettingsDetailView(title: setting.rawValue)
+                    switch setting {
+                    case .account, .sync, .general, .appIcon:
+                        SettingsDetailView(title: setting.rawValue)
+                    case .adaptable:
+                        AdaptableView()
+                    }
                 } label: {
                     Label(setting.rawValue, systemImage: setting.image)
                 }

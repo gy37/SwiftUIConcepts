@@ -12,6 +12,10 @@ struct MyScene: Scene {
         WindowGroup {
             ContentView()
         }
+        WindowGroup {
+            AdaptableView()
+        }
+
         Settings {
             SettingsView()
         }
