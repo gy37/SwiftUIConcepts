@@ -14,6 +14,7 @@ struct SettingsView: View {
         case general = "General"
         case appIcon = "App icon"
         case adaptable = "Adaptable"
+        case layer = "Layer"
         
         var id: String {
             self.rawValue
@@ -31,6 +32,8 @@ struct SettingsView: View {
                 return "app"
             case .adaptable:
                 return "circle"
+            case .layer:
+                return "square.3.layers.3d.down.right"
             }
         }
     }
@@ -53,6 +56,8 @@ struct SettingsView: View {
                                 Label(setting.rawValue, systemImage: setting.image)
                             }
                             .tag(setting)
+                    case .layer:
+                        CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
                     } 
                 }
             }
@@ -65,6 +70,8 @@ struct SettingsView: View {
                         SettingsDetailView(title: setting.rawValue)
                     case .adaptable:
                         AdaptableView()
+                    case .layer:
+                        CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
                     }
                 } label: {
                     Label(setting.rawValue, systemImage: setting.image)

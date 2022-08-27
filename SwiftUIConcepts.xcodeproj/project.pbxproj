@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87EDB1E28B277F100F7D9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FEA14328A69E6300D2C1BE /* Assets.xcassets */; };
 		D8905C2828ABDAA900170993 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8905C2728ABDAA900170993 /* SettingsDetailView.swift */; };
 		D8905C2928ABDAA900170993 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8905C2728ABDAA900170993 /* SettingsDetailView.swift */; };
+		D8A27A6028B2771A00B3D086 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */; };
 		D8A6232F28A8A32B006689A0 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6232D28A8A32B006689A0 /* Journal.swift */; };
 		D8A6233028A8A32B006689A0 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6232E28A8A32B006689A0 /* JournalEntry.swift */; };
-		D8A623B528A8F2A9006689A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A623B428A8F2A9006689A0 /* Assets.xcassets */; };
 		D8A623B828A8F2A9006689A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A623B728A8F2A9006689A0 /* Preview Assets.xcassets */; };
 		D8A623C328A8F2A9006689A0 /* SwiftUIConcepts_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A623C228A8F2A9006689A0 /* SwiftUIConcepts_MacTests.swift */; };
 		D8A623CD28A8F2A9006689A0 /* SwiftUIConcepts_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A623CC28A8F2A9006689A0 /* SwiftUIConcepts_MacUITests.swift */; };
@@ -30,6 +31,7 @@
 		D8A623EE28A9363C006689A0 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A623E728A91B15006689A0 /* DateView.swift */; };
 		D8A8F02C28AD25E500C806B8 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8F02B28AD25E500C806B8 /* MyScene.swift */; };
 		D8A8F02E28AD268C00C806B8 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8F02D28AD268C00C806B8 /* MyScene.swift */; };
+		D8AC369428B10FCD00ED6F65 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */; };
 		D8B3A52828AFD318009AAA02 /* AdaptableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3A52728AFD318009AAA02 /* AdaptableView.swift */; };
 		D8B3A52928AFD318009AAA02 /* AdaptableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3A52728AFD318009AAA02 /* AdaptableView.swift */; };
 		D8FEA14028A69E6100D2C1BE /* SwiftUIConceptsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FEA13F28A69E6100D2C1BE /* SwiftUIConceptsApp.swift */; };
@@ -78,7 +80,6 @@
 		D8A6232D28A8A32B006689A0 /* Journal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		D8A6232E28A8A32B006689A0 /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		D8A623AE28A8F2A8006689A0 /* SwiftUIConcepts_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcepts_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A623B428A8F2A9006689A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A623B728A8F2A9006689A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8A623B928A8F2A9006689A0 /* SwiftUIConcepts_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIConcepts_Mac.entitlements; sourceTree = "<group>"; };
 		D8A623BE28A8F2A9006689A0 /* SwiftUIConcepts_MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIConcepts_MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +93,7 @@
 		D8A623E928A91D27006689A0 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
 		D8A8F02B28AD25E500C806B8 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
 		D8A8F02D28AD268C00C806B8 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
+		D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
 		D8B3A52728AFD318009AAA02 /* AdaptableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptableView.swift; sourceTree = "<group>"; };
 		D8FEA13C28A69E6100D2C1BE /* SwiftUIConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FEA13F28A69E6100D2C1BE /* SwiftUIConceptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConceptsApp.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				D8A623E228A90658006689A0 /* JournalEntryListItem.swift */,
 				D8A623E728A91B15006689A0 /* DateView.swift */,
+				D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -174,7 +177,6 @@
 			children = (
 				D8A8F02D28AD268C00C806B8 /* MyScene.swift */,
 				D8A623E528A9068B006689A0 /* ContentView.swift */,
-				D8A623B428A8F2A9006689A0 /* Assets.xcassets */,
 				D8A623B928A8F2A9006689A0 /* SwiftUIConcepts_Mac.entitlements */,
 				D8A623B628A8F2A9006689A0 /* Preview Content */,
 			);
@@ -455,7 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A623B828A8F2A9006689A0 /* Preview Assets.xcassets in Resources */,
-				D8A623B528A8F2A9006689A0 /* Assets.xcassets in Resources */,
+				D87EDB1E28B277F100F7D9B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +509,7 @@
 				D8A623ED28A935F5006689A0 /* JournalEntry.swift in Sources */,
 				D8A8F02E28AD268C00C806B8 /* MyScene.swift in Sources */,
 				D8A623EE28A9363C006689A0 /* DateView.swift in Sources */,
+				D8A27A6028B2771A00B3D086 /* CaptionedPhoto.swift in Sources */,
 				D8A623DA28A8F38F006689A0 /* SettingsView.swift in Sources */,
 				D8B3A52928AFD318009AAA02 /* AdaptableView.swift in Sources */,
 				D8905C2928ABDAA900170993 /* SettingsDetailView.swift in Sources */,
@@ -542,6 +545,7 @@
 				D8A6233028A8A32B006689A0 /* JournalEntry.swift in Sources */,
 				D8A8F02C28AD25E500C806B8 /* MyScene.swift in Sources */,
 				D8A623EA28A91D27006689A0 /* JournalEntryView.swift in Sources */,
+				D8AC369428B10FCD00ED6F65 /* CaptionedPhoto.swift in Sources */,
 				D8A623E828A91B15006689A0 /* DateView.swift in Sources */,
 				D8B3A52828AFD318009AAA02 /* AdaptableView.swift in Sources */,
 				D8905C2828ABDAA900170993 /* SettingsDetailView.swift in Sources */,

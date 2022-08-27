@@ -30,4 +30,9 @@
 28. Display photos and other rich graphics in an Image. By default, an Image displays at the asset’s original size. You can add modifiers like resizable(capInsets:resizingMode:) and scaledToFit() or scaledToFill() to scale it to the available space. 使用Image显示图片，默认使用图片原始大小，可以使用修改器适配大小；
 29. If you’re accessing an image asset from a server, use an AsyncImage to handle the download while keeping your app responsive. 使用AsyncImage组件异步加载网络图片；
 30. Use a single shape or a composition of multiple shapes to create a background, border, or other visual element. You can define a shape’s size with a modifier like frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:), or allow it to fill all available space. 形状，可以通过修饰器修改；
-31. 
+31. Defining the caption inside overlay(alignment:content:) declares that the caption belongs in front of the image. The size of the primary view limits the size of the overlay(alignment:content:) that modifies the primary view. 使用(alignment:content:)声明一个视图覆盖在当前视图上；覆盖视图大小由当前视图决定；
+32. Choose carefully how to combine padding with an overlay or background modifier. If you pad the primary view before modifying it with the overlay or background, the system uses the size of the padded primary view to calculate the placement of the secondary view. Apply the padding after the overlay or background to put a little space around the view that includes both layers. padding和overlay或者background修改器一起使用时，需要注意顺序；先使用padding，系统会以padding后的视图尺寸计算其他子视图；后使用padding，会在当前视图和子视图同时添加padding；
+33. The TextContrast color set in this project’s asset catalog defines separate color values for light and dark appearances. 在asset中可以增加自定义颜色，用来适配夜间模式主题；
+34. A background modifier like `background(_:in:fillStyle:)` is similar to an overlay modifier, in that its content bases its size on the size of the view it modifies. However, a background modifier puts its contents behind the view it modifies, rather than in front. background修改器和overlay类似，只是在视图的后面，不是前面；
+35. 
+
