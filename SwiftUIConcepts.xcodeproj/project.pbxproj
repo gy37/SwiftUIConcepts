@@ -34,6 +34,8 @@
 		D8AC369428B10FCD00ED6F65 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */; };
 		D8B3A52828AFD318009AAA02 /* AdaptableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3A52728AFD318009AAA02 /* AdaptableView.swift */; };
 		D8B3A52928AFD318009AAA02 /* AdaptableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3A52728AFD318009AAA02 /* AdaptableView.swift */; };
+		D8D7648228BBA2F200F02E34 /* TrainCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7648128BBA2F200F02E34 /* TrainCars.swift */; };
+		D8D7648328BBA7B900F02E34 /* TrainCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7648128BBA2F200F02E34 /* TrainCars.swift */; };
 		D8FEA14028A69E6100D2C1BE /* SwiftUIConceptsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FEA13F28A69E6100D2C1BE /* SwiftUIConceptsApp.swift */; };
 		D8FEA14228A69E6100D2C1BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FEA14128A69E6100D2C1BE /* ContentView.swift */; };
 		D8FEA14428A69E6300D2C1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FEA14328A69E6300D2C1BE /* Assets.xcassets */; };
@@ -95,6 +97,7 @@
 		D8A8F02D28AD268C00C806B8 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
 		D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
 		D8B3A52728AFD318009AAA02 /* AdaptableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptableView.swift; sourceTree = "<group>"; };
+		D8D7648128BBA2F200F02E34 /* TrainCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCars.swift; sourceTree = "<group>"; };
 		D8FEA13C28A69E6100D2C1BE /* SwiftUIConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FEA13F28A69E6100D2C1BE /* SwiftUIConceptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConceptsApp.swift; sourceTree = "<group>"; };
 		D8FEA14128A69E6100D2C1BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 				D8A623E228A90658006689A0 /* JournalEntryListItem.swift */,
 				D8A623E728A91B15006689A0 /* DateView.swift */,
 				D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */,
+				D8D7648128BBA2F200F02E34 /* TrainCars.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -512,6 +516,7 @@
 				D8A27A6028B2771A00B3D086 /* CaptionedPhoto.swift in Sources */,
 				D8A623DA28A8F38F006689A0 /* SettingsView.swift in Sources */,
 				D8B3A52928AFD318009AAA02 /* AdaptableView.swift in Sources */,
+				D8D7648328BBA7B900F02E34 /* TrainCars.swift in Sources */,
 				D8905C2928ABDAA900170993 /* SettingsDetailView.swift in Sources */,
 				D8A623E428A90658006689A0 /* JournalEntryListItem.swift in Sources */,
 				D8A623EB28A935E0006689A0 /* JournalEntryView.swift in Sources */,
@@ -548,6 +553,7 @@
 				D8AC369428B10FCD00ED6F65 /* CaptionedPhoto.swift in Sources */,
 				D8A623E828A91B15006689A0 /* DateView.swift in Sources */,
 				D8B3A52828AFD318009AAA02 /* AdaptableView.swift in Sources */,
+				D8D7648228BBA2F200F02E34 /* TrainCars.swift in Sources */,
 				D8905C2828ABDAA900170993 /* SettingsDetailView.swift in Sources */,
 				D8A6232F28A8A32B006689A0 /* Journal.swift in Sources */,
 				D8FEA14228A69E6100D2C1BE /* ContentView.swift in Sources */,

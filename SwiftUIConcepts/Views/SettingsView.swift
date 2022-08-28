@@ -15,6 +15,7 @@ struct SettingsView: View {
         case appIcon = "App icon"
         case adaptable = "Adaptable"
         case layer = "Layer"
+        case hideView = "Hide view"
         
         var id: String {
             self.rawValue
@@ -34,6 +35,8 @@ struct SettingsView: View {
                 return "circle"
             case .layer:
                 return "square.3.layers.3d.down.right"
+            case .hideView:
+                return "eye.slash"
             }
         }
     }
@@ -58,6 +61,16 @@ struct SettingsView: View {
                             .tag(setting)
                     case .layer:
                         CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
+                            .tabItem {
+                                Label(setting.rawValue, systemImage: setting.image)
+                            }
+                            .tag(setting)
+                    case .hideView:
+                        TrainCars()
+                            .tabItem {
+                                Label(setting.rawValue, systemImage: setting.image)
+                            }
+                            .tag(setting)
                     } 
                 }
             }
@@ -72,6 +85,8 @@ struct SettingsView: View {
                         AdaptableView()
                     case .layer:
                         CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
+                    case .hideView:
+                        TrainCars()
                     }
                 } label: {
                     Label(setting.rawValue, systemImage: setting.image)

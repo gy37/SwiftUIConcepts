@@ -34,5 +34,5 @@
 32. Choose carefully how to combine padding with an overlay or background modifier. If you pad the primary view before modifying it with the overlay or background, the system uses the size of the padded primary view to calculate the placement of the secondary view. Apply the padding after the overlay or background to put a little space around the view that includes both layers. padding和overlay或者background修改器一起使用时，需要注意顺序；先使用padding，系统会以padding后的视图尺寸计算其他子视图；后使用padding，会在当前视图和子视图同时添加padding；
 33. The TextContrast color set in this project’s asset catalog defines separate color values for light and dark appearances. 在asset中可以增加自定义颜色，用来适配夜间模式主题；
 34. A background modifier like `background(_:in:fillStyle:)` is similar to an overlay modifier, in that its content bases its size on the size of the view it modifies. However, a background modifier puts its contents behind the view it modifies, rather than in front. background修改器和overlay类似，只是在视图的后面，不是前面；
-35. 
-
+35. if语句可以控制视图显示和隐藏，false时不会渲染视图；opacity也可以隐藏视图，视图不可见，但是会渲染；hidden隐藏视图，一直不可见；
+36.
