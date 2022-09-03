@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D830FB7928C35A60008D4D0F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89552E928C3573A003D7A0B /* Event.swift */; };
+		D830FB7A28C35A64008D4D0F /* EventTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89552E728C34B44003D7A0B /* EventTile.swift */; };
 		D87EDB1E28B277F100F7D9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FEA14328A69E6300D2C1BE /* Assets.xcassets */; };
 		D8905C2828ABDAA900170993 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8905C2728ABDAA900170993 /* SettingsDetailView.swift */; };
 		D8905C2928ABDAA900170993 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8905C2728ABDAA900170993 /* SettingsDetailView.swift */; };
+		D89552E828C34B44003D7A0B /* EventTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89552E728C34B44003D7A0B /* EventTile.swift */; };
+		D89552EA28C3573A003D7A0B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89552E928C3573A003D7A0B /* Event.swift */; };
 		D8A27A6028B2771A00B3D086 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */; };
 		D8A6232F28A8A32B006689A0 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6232D28A8A32B006689A0 /* Journal.swift */; };
 		D8A6233028A8A32B006689A0 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6232E28A8A32B006689A0 /* JournalEntry.swift */; };
@@ -78,6 +82,8 @@
 
 /* Begin PBXFileReference section */
 		D8905C2728ABDAA900170993 /* SettingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailView.swift; sourceTree = "<group>"; };
+		D89552E728C34B44003D7A0B /* EventTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTile.swift; sourceTree = "<group>"; };
+		D89552E928C3573A003D7A0B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D8A6232828A8974F006689A0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D8A6232D28A8A32B006689A0 /* Journal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		D8A6232E28A8A32B006689A0 /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 				D8A623E728A91B15006689A0 /* DateView.swift */,
 				D8AC369328B10FCD00ED6F65 /* CaptionedPhoto.swift */,
 				D8D7648128BBA2F200F02E34 /* TrainCars.swift */,
+				D89552E728C34B44003D7A0B /* EventTile.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 			children = (
 				D8A6232D28A8A32B006689A0 /* Journal.swift */,
 				D8A6232E28A8A32B006689A0 /* JournalEntry.swift */,
+				D89552E928C3573A003D7A0B /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -518,9 +526,11 @@
 				D8B3A52928AFD318009AAA02 /* AdaptableView.swift in Sources */,
 				D8D7648328BBA7B900F02E34 /* TrainCars.swift in Sources */,
 				D8905C2928ABDAA900170993 /* SettingsDetailView.swift in Sources */,
+				D830FB7A28C35A64008D4D0F /* EventTile.swift in Sources */,
 				D8A623E428A90658006689A0 /* JournalEntryListItem.swift in Sources */,
 				D8A623EB28A935E0006689A0 /* JournalEntryView.swift in Sources */,
 				D8A623EC28A935F5006689A0 /* Journal.swift in Sources */,
+				D830FB7928C35A60008D4D0F /* Event.swift in Sources */,
 				D8A623D928A8F36C006689A0 /* SwiftUIConceptsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +560,7 @@
 				D8A6233028A8A32B006689A0 /* JournalEntry.swift in Sources */,
 				D8A8F02C28AD25E500C806B8 /* MyScene.swift in Sources */,
 				D8A623EA28A91D27006689A0 /* JournalEntryView.swift in Sources */,
+				D89552EA28C3573A003D7A0B /* Event.swift in Sources */,
 				D8AC369428B10FCD00ED6F65 /* CaptionedPhoto.swift in Sources */,
 				D8A623E828A91B15006689A0 /* DateView.swift in Sources */,
 				D8B3A52828AFD318009AAA02 /* AdaptableView.swift in Sources */,
@@ -558,6 +569,7 @@
 				D8A6232F28A8A32B006689A0 /* Journal.swift in Sources */,
 				D8FEA14228A69E6100D2C1BE /* ContentView.swift in Sources */,
 				D8A623E328A90658006689A0 /* JournalEntryListItem.swift in Sources */,
+				D89552E828C34B44003D7A0B /* EventTile.swift in Sources */,
 				D8FEA14028A69E6100D2C1BE /* SwiftUIConceptsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

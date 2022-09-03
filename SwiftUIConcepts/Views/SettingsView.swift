@@ -14,8 +14,7 @@ struct SettingsView: View {
         case general = "General"
         case appIcon = "App icon"
         case adaptable = "Adaptable"
-        case layer = "Layer"
-        case hideView = "Hide view"
+        case layoutViews = "Layout Views"
         
         var id: String {
             self.rawValue
@@ -33,10 +32,8 @@ struct SettingsView: View {
                 return "app"
             case .adaptable:
                 return "circle"
-            case .layer:
+            case .layoutViews:
                 return "square.3.layers.3d.down.right"
-            case .hideView:
-                return "eye.slash"
             }
         }
     }
@@ -59,18 +56,18 @@ struct SettingsView: View {
                                 Label(setting.rawValue, systemImage: setting.image)
                             }
                             .tag(setting)
-                    case .layer:
-                        CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
-                            .tabItem {
-                                Label(setting.rawValue, systemImage: setting.image)
+                    case .layoutViews:
+                        HStack {
+                            CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
+                            VStack {
+                                TrainCars()
+                                EventTile(event: Event.default)
                             }
-                            .tag(setting)
-                    case .hideView:
-                        TrainCars()
-                            .tabItem {
-                                Label(setting.rawValue, systemImage: setting.image)
-                            }
-                            .tag(setting)
+                        }
+                        .tabItem {
+                            Label(setting.rawValue, systemImage: setting.image)
+                        }
+                        .tag(setting)
                     } 
                 }
             }
@@ -83,10 +80,12 @@ struct SettingsView: View {
                         SettingsDetailView(title: setting.rawValue)
                     case .adaptable:
                         AdaptableView()
-                    case .layer:
-                        CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
-                    case .hideView:
-                        TrainCars()
+                    case .layoutViews:
+                        VStack {
+                            CaptionedPhoto(assetName: "bg", captionText: "This photo is wider than it is tall.")
+                            TrainCars()
+                            EventTile(event: Event.default)
+                        }
                     }
                 } label: {
                     Label(setting.rawValue, systemImage: setting.image)
